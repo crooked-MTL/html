@@ -1,1 +1,57 @@
 <!-- ...crickets... -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Registration Form</h1>
+    <form>
+      <label for="Username">Username</label>
+      <input type="text" required />
+      <label for="Password">password</label>
+      <input type="text" required />
+      <label for="Email">Email</label>
+      <input type="text" required />
+    </form>
+
+    <h2>Which taxi do you require?</h2>
+    <form>
+      <input type="radio" required />
+      <label for="car">Car</label>
+      <input type="radio" required />
+      <label for="Van">Van</label>
+      <input type="radio" required />
+      <label for="Tuk Tuk">Tuk Tuk</label>
+    </form>
+
+    <h2>Choose your extras</h2>
+    <form>
+      <input type="checkbox" />
+      <label for="baby_seat">Baby Seat</label>
+      <input type="checkbox" />
+      <label for="Wheelchair_access">Wheelchair access</label>
+      <input type="checkbox" />
+      <label for="Privacy_windows">Privacy Windows</label>
+    </form>
+
+    <h2>Where would you like us to pick you up?</h2>
+    <form>
+      <label for="location">Pickup Location:</label>
+      <select name="locations">
+        <optgroup label="Select One">
+          <option value="Montreal">Montreal</option>
+          <option value="Toronto">Toronto</option>
+          <option value="Ottawa">Ottawa</option>
+        </optgroup>
+      </select>
+    </form>
+
+    <h2>Additional Instructions</h2>
+    <form>
+      <label for="special">Special</label>
+      <textarea name="special" rows="2" cols="20">
+provide special instruction here
+        </textarea
+      >
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
