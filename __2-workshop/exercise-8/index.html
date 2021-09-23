@@ -6,20 +6,22 @@
     <form>
       <label for="Username">Username</label>
       <input type="text" required />
+
       <label for="Password">password</label>
-      <input type="text" required />
+      <input type="password" required />
+
       <label for="Email">Email</label>
       <input type="text" required />
     </form>
 
     <h2>Which taxi do you require?</h2>
     <form>
-      <input type="radio" required />
-      <label for="car">Car</label>
-      <input type="radio" required />
-      <label for="Van">Van</label>
-      <input type="radio" required />
-      <label for="Tuk Tuk">Tuk Tuk</label>
+      <input type="radio" name="transport" value="car" />
+        <label for="car">car</label>
+      <input type="radio" name="transport" value="van" />
+      <label for="van">Van</label>
+      <input type="radio" name="transport" value="TukTuk" />
+      <label for="TukTuk">Tuk Tuk</label>
     </form>
 
     <h2>Choose your extras</h2>
@@ -46,11 +48,12 @@
 
     <h2>Additional Instructions</h2>
     <form>
-      <label for="special">Special</label>
-      <textarea name="special" rows="2" cols="20">
-provide special instruction here
-        </textarea
-      >
+      <label for="special"></label>Special</label>
+      <textarea 
+      placeholder="provide special instruction here" 
+      name="special"
+      rows="2" 
+      cols="20"></textarea>      
       <input type="submit" value="Submit" />
     </form>
   </body>
